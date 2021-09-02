@@ -1,0 +1,13 @@
+<resources>
+    <!--    here i don't want to change app name make it translatable false-->
+    <string name="app_name" translatable="false">App Language Change</string>
+
+    <string name="english" translatable="false">English</string>
+    <string name="urdu" translatable="false">اردو</string>
+    <string name="hindi" translatable="false">हिंदी</string>
+    <string name="bangla" translatable="false">বাংলা</string>
+    <string name="arabic" translatable="false">عربى</string>
+
+    <string name="testing_text">Hello, How are you?</string>
+
+</resources>
