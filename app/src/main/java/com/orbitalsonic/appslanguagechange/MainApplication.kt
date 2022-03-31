@@ -11,7 +11,7 @@ class MainApplication:Application() {
     override fun onCreate() {
         super.onCreate()
         // this setting for default actionbar title
-        setLocale(getLanguageCode(this))
+//        setLocale(getLanguageCode(this))
     }
 
     private fun setLocale(locale: String) {
