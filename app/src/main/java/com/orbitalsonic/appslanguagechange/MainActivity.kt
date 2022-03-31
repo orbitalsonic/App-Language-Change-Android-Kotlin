@@ -1,8 +1,10 @@
 package com.orbitalsonic.appslanguagechange
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.RadioButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.orbitalsonic.appslanguagechange.SharedPreferencesUtils.getLanguagePosition
 import com.orbitalsonic.appslanguagechange.SharedPreferencesUtils.setLanguageCode
@@ -14,7 +16,7 @@ import com.orbitalsonic.appslanguagechange.databinding.ActivityMainBinding
  * if you don't want to change layout direction
  * go in AndroidManifest and change android:supportsRtl="false"
  */
-class MainActivity : BaseActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -25,12 +27,14 @@ class MainActivity : BaseActivity() {
 
         changeRadioButtonViews(getLanguagePosition(this))
 
-        binding.tvTestingText.text = mResources.getString(R.string.testing_text)
-
         binding.languageRadioGroup.setOnCheckedChangeListener { group, checkedId ->
             val radio: RadioButton = findViewById(checkedId)
             onRadioButtonClicked(radio)
         }
+    }
+
+    override fun attachBaseContext(newBase: Context?) {
+        super.attachBaseContext(LocaleHelper.setLocale(newBase!!))
     }
 
 

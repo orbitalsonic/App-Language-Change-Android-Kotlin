@@ -1,6 +1,6 @@
 <resources>
     <!--    here i don't want to change app name make it translatable false-->
-    <string name="app_name" translatable="false">App Language Change</string>
+    <string name="app_name">App Language Change</string>
 
     <string name="english" translatable="false">English</string>
     <string name="urdu" translatable="false">اردو</string>

@@ -6,9 +6,9 @@ import android.content.SharedPreferences
 
 object SharedPreferencesUtils {
 
-    fun getLanguageCode(mContext: Context):String?{
+    fun getLanguageCode(mContext: Context):String{
         val sharedPreferences: SharedPreferences=mContext.getSharedPreferences("languageCodePrefs", Context.MODE_PRIVATE)
-        return sharedPreferences.getString("languageCodeValue", "en")
+        return sharedPreferences.getString("languageCodeValue", "en")!!
     }
 
     fun setLanguageCode(mContext: Context, code: String){

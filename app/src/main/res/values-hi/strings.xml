@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">ऐप भाषा बदलें</string>
     <string name="testing_text">नमस्ते कैसी हो तुम?</string>
 </resources>

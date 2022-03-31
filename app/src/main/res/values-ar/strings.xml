@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources>\
+    <string name="app_name">تغيير لغة التطبيق</string>
     <string name="testing_text">مرحبا كيف حالك؟</string>
 
 </resources>

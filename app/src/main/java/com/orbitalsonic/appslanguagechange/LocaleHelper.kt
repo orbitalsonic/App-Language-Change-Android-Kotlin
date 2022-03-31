@@ -6,15 +6,17 @@ import android.annotation.TargetApi
 import android.content.Context
 import android.content.res.Configuration
 import android.content.res.Resources
+import com.orbitalsonic.appslanguagechange.SharedPreferencesUtils.getLanguageCode
 import java.util.*
 
 
 object LocaleHelper {
+//    var language = "en"
 
-    fun setLocale(context: Context, language: String): Context? {
+    fun setLocale(context: Context): Context? {
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            updateResources(context, language)
-        } else updateResourcesLegacy(context, language)
+            updateResources(context, getLanguageCode(context))
+        } else updateResourcesLegacy(context, getLanguageCode(context))
     }
 
 

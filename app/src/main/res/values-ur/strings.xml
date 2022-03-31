@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="app_name">ایپ کی زبان میں تبدیلی</string>
     <string name="testing_text">ہیلو آپ کیسے ہیں؟</string>
 
 </resources>
